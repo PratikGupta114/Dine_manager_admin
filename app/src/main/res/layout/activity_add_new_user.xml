@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/White"
+    tools:context=".AddNewUserActivity">
+
+    <!-- Toolbar Layout-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="6dp"
+        android:gravity="center|start"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imv2_backButton"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_dark_background_rounded_corners"
+            android:paddingTop="17dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="17dp"
+            android:src="@drawable/back_arrow"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clan_book_webfont"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Add new User"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- First View -->
+    <RelativeLayout
+        android:id="@+id/layout2_firstView"
+        android:layout_below="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv2_addNewUserGuide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddNewUserGuideText1"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/varela_round_regular"
+            />
+        <TextView
+            android:id="@+id/tv2_addNewUserGuide2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/AddNewUserGuideText2"
+            android:layout_below="@id/tv2_addNewUserGuide1"
+            android:textColor="@color/DeepGray"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp" />
+        <ImageView
+            android:id="@+id/imv2_scanQRCode"
+            android:layout_below="@+id/tv2_addNewUserGuide2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/scan_qr_code3"
+            />
+
+        <TextView
+            android:id="@+id/tv2_addNewUserGuide3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/AddNewUserGuideText3"
+            android:layout_below="@id/imv2_scanQRCode"
+            android:textColor="@color/DeepGray"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp" />
+        <ImageView
+            android:id="@+id/imv2_credentialsDisplay"
+            android:layout_below="@+id/tv2_addNewUserGuide3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user_credentials1"
+            />
+        <Button
+            android:id="@+id/bt2_scanQButton"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/imv2_credentialsDisplay"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/White"
+            android:text="Scan QR code"
+            android:textAllCaps="false"
+            android:fontFamily="@font/varela_round_regular"
+            android:background="@drawable/ripple_dark_background_rounded_corners"
+            />
+
+    </RelativeLayout>
+
+    <!-- Second View -->
+    <RelativeLayout
+        android:id="@+id/layout2_secondView"
+        android:layout_toEndOf="@+id/layout2_firstView"
+        android:layout_below="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv2_scannedUserDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanned User Details"
+            android:textSize="19sp"
+            android:textColor="@color/DeepGray"
+            android:fontFamily="@font/product_sans_regular"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:id="@+id/imv2_userDetailsImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tv2_scannedUserDetailsText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile_info"
+            />
+
+        <!-- Phone Number Header -->
+        <TextView
+            android:id="@+id/tv2_phoneNumberHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv2_userDetailsImage"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:text="Phone Number      :"
+            android:textColor="@color/DeepGray" />
+        <TextView
+            android:id="@+id/tv2_phoneNumber"
+            android:layout_below="@+id/imv2_userDetailsImage"
+            android:layout_toEndOf="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9163826615"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="50dp"
+            />
+
+        <!-- Email Address Header -->
+        <TextView
+            android:id="@+id/tv2_emailHeader"
+            android:layout_below="@+id/tv2_phoneNumberHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address        :"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tv2_emailAddress"
+            android:layout_below="@+id/tv2_phoneNumber"
+            android:layout_toEndOf="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdsargrgupta1148@gmail.com"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+
+        <!-- Password Header -->
+        <TextView
+            android:id="@+id/tv2_passwordHeader"
+            android:layout_below="@+id/tv2_emailHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password                :"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tv2_password"
+            android:layout_below="@+id/tv2_emailAddress"
+            android:layout_toEndOf="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#-435345345345#"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+
+        <!-- Restaurant Name Header -->
+        <TextView
+            android:id="@+id/tv2_restaurantNameHeader"
+            android:layout_below="@+id/tv2_passwordHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Name  :"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tv2_restaurantName"
+            android:layout_below="@+id/tv2_password"
+            android:layout_toEndOf="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafe Taj Mahal Kolkata"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+
+        <!-- Owner's Name Header -->
+        <TextView
+            android:id="@+id/tv2_restaurantOwnerNameHeader"
+            android:layout_below="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner's Name       :"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tv2_restaurantOwnerName"
+            android:layout_below="@+id/tv2_restaurantName"
+            android:layout_toEndOf="@+id/tv2_restaurantNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manohar Lal Gupta"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/DeepGray"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/bt2_createAccount"
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:text="Create Account"
+            android:layout_below="@id/tv2_restaurantOwnerName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ripple_dark_background_rounded_corners"
+            android:textAllCaps="false"
+            android:fontFamily="@font/varela_round_regular"
+            android:textColor="@color/White"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

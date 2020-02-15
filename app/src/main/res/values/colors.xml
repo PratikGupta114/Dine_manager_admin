@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#460003</color>
+    <color name="colorPrimaryDark">#2C0003</color>
+    <color name="colorAccent">#883333</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="DeepGray">#333333</color>
+    <color name="HintWhite">#AAAAAA</color>
+    <color name="ButtonBlue">#3D8CCE</color>
+    <color name="listViewBackground">#999999</color>
+
+    <color name="warningYellowColour">#FFBD0E</color>
+    <color name="cancelledOrange">#D85600</color>
+    <color name="warningRedColour">#C91515</color>
+    <color name="successGreenColour">#089E03</color>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SplashActivity">
+    
+    <TextView
+        android:id="@+id/tv1_dineManagerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dine manager"
+        android:textColor="@color/White"
+        android:textSize="40sp"
+        android:fontFamily="@font/smaran"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        />
+    <TextView
+        android:id="@+id/tv1_adminText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(admin)"
+        android:textColor="@color/White"
+        android:layout_below="@+id/tv1_dineManagerText"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/smaran"
+        android:textSize="22sp"
+        />
+
+    <ImageView
+        android:id="@+id/imv1_restog_logo_footer"
+        android:layout_width="170dp"
+        android:layout_height="36dp"
+        android:src="@drawable/restog_logo_brown"
+        android:layout_below="@+id/tv1_dineManagerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        />
+    <TextView
+        android:id="@+id/tv1_footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/footer_text"
+        android:textColor="@color/White"
+        android:layout_below="@+id/imv1_restog_logo_footer"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        />
+
+</RelativeLayout>

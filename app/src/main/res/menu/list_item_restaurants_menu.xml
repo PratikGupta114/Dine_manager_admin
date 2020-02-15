@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu3_deleteUser"
+        android:title="Delete User" />
+    <item
+        android:id="@+id/menu3_addCredits"
+        android:title="Add SMS Credits" />
+    <item
+        android:id="@+id/menu3_blockUser"
+        android:title="Block This User" />
+    <item
+        android:id="@+id/menu3_sendAMessage"
+        android:title="Send a Message" />
+</menu>

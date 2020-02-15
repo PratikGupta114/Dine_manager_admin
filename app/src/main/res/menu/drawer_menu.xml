@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Manage Users">
+        <menu>
+
+            <item android:id="@+id/menu1_addNewUser"
+                android:title="Add new User"
+                android:icon="@drawable/add_user_icon" />
+
+            <item android:id="@+id/menu1_deleteExistingUser"
+                android:title="Delete existing User"
+                android:icon="@drawable/delete_icon"/>
+
+            <item android:id="@+id/menu1_viewUserDetails"
+                android:title="View User Details"
+                android:icon="@drawable/list_icon"
+                />
+        </menu>
+    </item>
+    <item android:title="Analytics">
+        <menu>
+
+            <item android:id="@+id/menu1_monitorUserData"
+                android:title="Monitor User's Data"
+                android:icon="@drawable/statistics_icon"/>
+
+            <item android:id="@+id/menu1_reportsAndComplaints"
+                android:title="Reports and Complaints"
+                android:icon="@drawable/complaints_icon"/>
+
+        </menu>
+    </item>
+</menu>
